@@ -19,6 +19,14 @@ from helpers import timing
 file_dir = os.path.dirname(__file__)
 
 
+def empty_csv_file(cleaned_path):
+    """
+    Create empty csv - file
+    """
+    df = pd.DataFrame(list())
+    df.to_csv(cleaned_path)
+
+
 def return_list(disease_type: str) -> List:
 
     return_disease_list: List[str] = []
@@ -68,15 +76,7 @@ def prepare_and_clean_data(path: str) -> NoReturn:
 
     # if file not exists -> create one
     if not os.path.exists(clean_data_set):
-        # closure
-        def empty_csv_file():
-            """
-            Create empty csv - file
-            """
-            df = pd.DataFrame(list())
-            df.to_csv(clean_data_set)
-
-        empty_csv_file()
+        empty_csv_file(clean_data_set)
 
     with open(clean_data_set, 'w') as w:
 
@@ -86,6 +86,25 @@ def prepare_and_clean_data(path: str) -> NoReturn:
             for v in values:
                 key = str.encode(key).decode('utf-8')
                 writer.writerow([key, v, dict_wt[key]])
+
+    slist = []
+    dlist = []
+
+    nodetable_data_set: str = os.path.join(file_dir, 'data', 'nodetable.csv')
+    if not os.path.exists(nodetable_data_set):
+        empty_csv_file(nodetable_data_set)
+
+    with open(nodetable_data_set, "w") as csvfile:
+        writer = csv.writer(csvfile)
+
+        for key, values in dict_.items():
+            for v in values:
+                if v not in slist:
+                    writer.writerow([v, v, "symptom"])
+                    slist.append(v)
+            if key not in dlist:
+                writer.writerow([key, key, "disease"])
+                dlist.append(key)
 
     return
 
