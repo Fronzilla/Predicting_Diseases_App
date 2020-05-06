@@ -30,25 +30,28 @@ class Disease(Resource):
             - {'Symptom': 'Value'}
         """
         data = request.get_json(force=True)
+
         list_ = []
-        for item in data.values():
-            list_.append(DISEASES.get(item))
+
+        for _, v in [(k, v) for x in data for (k, v) in x.items()]:
+            if DISEASES.get(v):
+                list_.append(DISEASES.get(v))
 
         if not list_:
-            return jsonify({'Unfortunately, There is no match': 'Unfortunately, There is no match'}), 404
+            return jsonify({'status': 'error', 'diagnosis': 'Unfortunately, There is no match'})
 
         sample = [i * 0 for i in range(len(DISEASES))]
 
-        for i in sample:
+        for i in enumerate(sample):
             for j in list_:
-                if i == j:
-                    sample[i] = 1
+                if i[0] == j:
+                    sample[i[0]] = 1
 
         sample = np.array(sample).reshape(1, len(DISEASES))
 
         diagnosis = model.predict(sample).item()
 
-        return jsonify({'Diagnosis': diagnosis})
+        return jsonify({'status': 'ok', 'diagnosis': diagnosis})
 
 
 api.add_resource(Disease, '/getdiagnosis')

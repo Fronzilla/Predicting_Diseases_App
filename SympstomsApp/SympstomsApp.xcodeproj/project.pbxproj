@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A92234D245D520900104EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92234C245D520900104EFB /* AppDelegate.swift */; };
+		1A92234F245D520900104EFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92234E245D520900104EFB /* SceneDelegate.swift */; };
+		1A922351245D520900104EFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A922350245D520900104EFB /* ContentView.swift */; };
+		1A922353245D521400104EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A922352245D521400104EFB /* Assets.xcassets */; };
+		1A922356245D521400104EFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A922355245D521400104EFB /* Preview Assets.xcassets */; };
+		1A922359245D521400104EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A922357245D521400104EFB /* LaunchScreen.storyboard */; };
+		1A922364245D521400104EFB /* SympstomsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A922363245D521400104EFB /* SympstomsAppTests.swift */; };
+		1A92236F245D521400104EFB /* SympstomsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92236E245D521400104EFB /* SympstomsAppUITests.swift */; };
+		1A9223802460294100104EFB /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92237F2460294100104EFB /* Data.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A922360245D521400104EFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A922341245D520900104EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A922348245D520900104EFB;
+			remoteInfo = SympstomsApp;
+		};
+		1A92236B245D521400104EFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A922341245D520900104EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A922348245D520900104EFB;
+			remoteInfo = SympstomsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A922349245D520900104EFB /* SympstomsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SympstomsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A92234C245D520900104EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A92234E245D520900104EFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A922350245D520900104EFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A922352245D521400104EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A922355245D521400104EFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A922358245D521400104EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A92235A245D521400104EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A92235F245D521400104EFB /* SympstomsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SympstomsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A922363245D521400104EFB /* SympstomsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympstomsAppTests.swift; sourceTree = "<group>"; };
+		1A922365245D521400104EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A92236A245D521400104EFB /* SympstomsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SympstomsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A92236E245D521400104EFB /* SympstomsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SympstomsAppUITests.swift; sourceTree = "<group>"; };
+		1A922370245D521400104EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A92237F2460294100104EFB /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A922346245D520900104EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A92235C245D521400104EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A922367245D521400104EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A922340245D520900104EFB = {
+			isa = PBXGroup;
+			children = (
+				1A92234B245D520900104EFB /* SympstomsApp */,
+				1A922362245D521400104EFB /* SympstomsAppTests */,
+				1A92236D245D521400104EFB /* SympstomsAppUITests */,
+				1A92234A245D520900104EFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A92234A245D520900104EFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A922349245D520900104EFB /* SympstomsApp.app */,
+				1A92235F245D521400104EFB /* SympstomsAppTests.xctest */,
+				1A92236A245D521400104EFB /* SympstomsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A92234B245D520900104EFB /* SympstomsApp */ = {
+			isa = PBXGroup;
+			children = (
+				1A92234C245D520900104EFB /* AppDelegate.swift */,
+				1A92234E245D520900104EFB /* SceneDelegate.swift */,
+				1A92237F2460294100104EFB /* Data.swift */,
+				1A922350245D520900104EFB /* ContentView.swift */,
+				1A922352245D521400104EFB /* Assets.xcassets */,
+				1A922357245D521400104EFB /* LaunchScreen.storyboard */,
+				1A92235A245D521400104EFB /* Info.plist */,
+				1A922354245D521400104EFB /* Preview Content */,
+			);
+			path = SympstomsApp;
+			sourceTree = "<group>";
+		};
+		1A922354245D521400104EFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A922355245D521400104EFB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A922362245D521400104EFB /* SympstomsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A922363245D521400104EFB /* SympstomsAppTests.swift */,
+				1A922365245D521400104EFB /* Info.plist */,
+			);
+			path = SympstomsAppTests;
+			sourceTree = "<group>";
+		};
+		1A92236D245D521400104EFB /* SympstomsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A92236E245D521400104EFB /* SympstomsAppUITests.swift */,
+				1A922370245D521400104EFB /* Info.plist */,
+			);
+			path = SympstomsAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A922348245D520900104EFB /* SympstomsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A922373245D521400104EFB /* Build configuration list for PBXNativeTarget "SympstomsApp" */;
+			buildPhases = (
+				1A922345245D520900104EFB /* Sources */,
+				1A922346245D520900104EFB /* Frameworks */,
+				1A922347245D520900104EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SympstomsApp;
+			productName = SympstomsApp;
+			productReference = 1A922349245D520900104EFB /* SympstomsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A92235E245D521400104EFB /* SympstomsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A922376245D521400104EFB /* Build configuration list for PBXNativeTarget "SympstomsAppTests" */;
+			buildPhases = (
+				1A92235B245D521400104EFB /* Sources */,
+				1A92235C245D521400104EFB /* Frameworks */,
+				1A92235D245D521400104EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A922361245D521400104EFB /* PBXTargetDependency */,
+			);
+			name = SympstomsAppTests;
+			productName = SympstomsAppTests;
+			productReference = 1A92235F245D521400104EFB /* SympstomsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A922369245D521400104EFB /* SympstomsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A922379245D521400104EFB /* Build configuration list for PBXNativeTarget "SympstomsAppUITests" */;
+			buildPhases = (
+				1A922366245D521400104EFB /* Sources */,
+				1A922367245D521400104EFB /* Frameworks */,
+				1A922368245D521400104EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A92236C245D521400104EFB /* PBXTargetDependency */,
+			);
+			name = SympstomsAppUITests;
+			productName = SympstomsAppUITests;
+			productReference = 1A92236A245D521400104EFB /* SympstomsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A922341245D520900104EFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Alexey Nikitin";
+				TargetAttributes = {
+					1A922348245D520900104EFB = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					1A92235E245D521400104EFB = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 1A922348245D520900104EFB;
+					};
+					1A922369245D521400104EFB = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 1A922348245D520900104EFB;
+					};
+				};
+			};
+			buildConfigurationList = 1A922344245D520900104EFB /* Build configuration list for PBXProject "SympstomsApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A922340245D520900104EFB;
+			productRefGroup = 1A92234A245D520900104EFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A922348245D520900104EFB /* SympstomsApp */,
+				1A92235E245D521400104EFB /* SympstomsAppTests */,
+				1A922369245D521400104EFB /* SympstomsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A922347245D520900104EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A922359245D521400104EFB /* LaunchScreen.storyboard in Resources */,
+				1A922356245D521400104EFB /* Preview Assets.xcassets in Resources */,
+				1A922353245D521400104EFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A92235D245D521400104EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A922368245D521400104EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A922345245D520900104EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A92234D245D520900104EFB /* AppDelegate.swift in Sources */,
+				1A92234F245D520900104EFB /* SceneDelegate.swift in Sources */,
+				1A922351245D520900104EFB /* ContentView.swift in Sources */,
+				1A9223802460294100104EFB /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A92235B245D521400104EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A922364245D521400104EFB /* SympstomsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A922366245D521400104EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A92236F245D521400104EFB /* SympstomsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A922361245D521400104EFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A922348245D520900104EFB /* SympstomsApp */;
+			targetProxy = 1A922360245D521400104EFB /* PBXContainerItemProxy */;
+		};
+		1A92236C245D521400104EFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A922348245D520900104EFB /* SympstomsApp */;
+			targetProxy = 1A92236B245D521400104EFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A922357245D521400104EFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A922358245D521400104EFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A922371245D521400104EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A922372245D521400104EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A922374245D521400104EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SympstomsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = K9D9X6ZWAH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SympstomsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "abuseofinnocent-gmail.com.SympstomsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A922375245D521400104EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SympstomsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = K9D9X6ZWAH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SympstomsApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "abuseofinnocent-gmail.com.SympstomsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A922377245D521400104EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9D9X6ZWAH;
+				INFOPLIST_FILE = SympstomsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "abuseofinnocent-gmail.com.SympstomsAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SympstomsApp.app/SympstomsApp";
+			};
+			name = Debug;
+		};
+		1A922378245D521400104EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9D9X6ZWAH;
+				INFOPLIST_FILE = SympstomsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "abuseofinnocent-gmail.com.SympstomsAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SympstomsApp.app/SympstomsApp";
+			};
+			name = Release;
+		};
+		1A92237A245D521400104EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9D9X6ZWAH;
+				INFOPLIST_FILE = SympstomsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "abuseofinnocent-gmail.com.SympstomsAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SympstomsApp;
+			};
+			name = Debug;
+		};
+		1A92237B245D521400104EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K9D9X6ZWAH;
+				INFOPLIST_FILE = SympstomsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "abuseofinnocent-gmail.com.SympstomsAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SympstomsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A922344245D520900104EFB /* Build configuration list for PBXProject "SympstomsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A922371245D521400104EFB /* Debug */,
+				1A922372245D521400104EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A922373245D521400104EFB /* Build configuration list for PBXNativeTarget "SympstomsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A922374245D521400104EFB /* Debug */,
+				1A922375245D521400104EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A922376245D521400104EFB /* Build configuration list for PBXNativeTarget "SympstomsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A922377245D521400104EFB /* Debug */,
+				1A922378245D521400104EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A922379245D521400104EFB /* Build configuration list for PBXNativeTarget "SympstomsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A92237A245D521400104EFB /* Debug */,
+				1A92237B245D521400104EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A922341245D520900104EFB /* Project object */;
+}
