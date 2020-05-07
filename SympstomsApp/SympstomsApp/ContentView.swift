@@ -9,20 +9,36 @@
 import SwiftUI
 import Combine
 
+struct SheetView: View {
+    let text: Text
+    var body: some View {
+        text
+    }
+}
+struct Diagnosys: Codable{
+       var status: String
+        var diagnosis: String
+
+       
+}
 struct ContentView: View {
     
     @State private var usedWord = [String]()
-    @State private var  rootWord = ""
+    @State private var rootWord = ""
     @State private var newWord = ""
+    @State private var showDiagnosys = ""
+    @State private var showSheet = false
     
     
     var body: some View {
         NavigationView{
+            
             VStack{
                 TextField("Enter your symptom", text: $newWord, onCommit: addNewWord)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .autocapitalization(.none )
                     .padding()
+                
                 List {
                     ForEach(usedWord, id: \.self){
                     Text($0)
@@ -34,15 +50,15 @@ struct ContentView: View {
                     
                     // here we placed logic of sending request to API server
                     
+                    self.showSheet.toggle()
+                    
                     let dictionary = Dictionary(uniqueKeysWithValues: zip(self.usedWord.indices, self.usedWord))
                     
                     let converted = dictionary.map{[String($0) : String($1)]}
 
                     
                     let jsonData = try? JSONSerialization.data(withJSONObject: converted, options: [])
-                    
-                    print(jsonData)
-                    
+                    // localhost
                     guard let url = URL(string: "http://127.0.0.1:5000/getdiagnosis") else {return}
                     
                     var request = URLRequest(url: url)
@@ -54,18 +70,36 @@ struct ContentView: View {
                         
                         if let data = data {
                             do {
-                                let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                                print(json)
+                                _ = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                                
+                                let decoder = JSONDecoder()
+                                let model = try decoder.decode(Diagnosys.self, from:
+                                             data)
+                                
+                                self.showDiagnosys = model.diagnosis
+                                
                             } catch {
                                 print(error)
                             }
                         }
                     }.resume()
                         
-                    print(dictionary)
-                }
+                }.sheet(isPresented: $showSheet, content: {SheetView(text: Text(self.showDiagnosys))})
+                .padding()
+                .foregroundColor(.white)
+                .background(Color.blue)
+                .cornerRadius(.infinity)
+            
             }
+                    
         .navigationBarTitle(rootWord)
+        .navigationBarItems(trailing: Button(action: {
+        }) {
+            Text("How it works?")
+            Image(systemName: "ellipses.bubble")
+            .imageScale(.large)
+        })
+            
         }
     }
      
@@ -90,6 +124,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
 
 
 

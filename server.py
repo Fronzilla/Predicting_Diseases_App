@@ -8,6 +8,7 @@ import pickle
 import os
 from diseases import DISEASES
 import numpy as np
+from typing import List, Dict
 
 app = Flask(__name__)
 api = Api(app)
@@ -23,15 +24,15 @@ class Disease(Resource):
 
     """
     @staticmethod
-    def post():
+    def post() -> dict:
         """"
         Post method:
         The structure of json input object is like:
-            - {'Symptom': 'Value'}
+            - {'0': 'Value', 1: 'Value'}
         """
-        data = request.get_json(force=True)
+        data: Dict = request.get_json(force=True)
 
-        list_ = []
+        list_: List[str] = []
 
         for _, v in [(k, v) for x in data for (k, v) in x.items()]:
             if DISEASES.get(v):
@@ -40,7 +41,7 @@ class Disease(Resource):
         if not list_:
             return jsonify({'status': 'error', 'diagnosis': 'Unfortunately, There is no match'})
 
-        sample = [i * 0 for i in range(len(DISEASES))]
+        sample: List[int] = [i * 0 for i in range(len(DISEASES))]
 
         for i in enumerate(sample):
             for j in list_:
@@ -57,5 +58,3 @@ class Disease(Resource):
 api.add_resource(Disease, '/getdiagnosis')
 if __name__ == '__main__':
     app.run(debug=True)
-
-
