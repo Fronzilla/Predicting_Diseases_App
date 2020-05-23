@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify
 from flask_restful import Api, Resource
 import pickle
 import os
-from diseases import DISEASES
+from Server.diseases import *
 import numpy as np
 from typing import List, Dict
 
