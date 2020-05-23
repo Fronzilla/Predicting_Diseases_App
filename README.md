@@ -1,6 +1,6 @@
 # Predicting_Diseases_App
 This is a simple diseases prediction app. It applied machine learning (decision tree classifier) to predict medical diagnosis from given symptoms
-
+![](app.gif)
 how to use:
 1) Start server:
 	- python /your path to server/server.py
