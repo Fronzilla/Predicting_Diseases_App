@@ -1,12 +1,17 @@
 # Predicting_Diseases_App
 This is a simple diseases prediction app. It applied machine learning (decision tree classifier) to predict medical diagnosis from given symptoms
+
 ![](app.gif)
-how to use:
+
+How to use:
+
 1) Start server:
 	- python /your path to server/server.py
 	- start app in Xcode 
 	- write symptoms from list in section "How it works?"
 	- click "Get diagnosys"
+
+![](Diagram.jpg)
 
 Things to improve:
 1) It works only with batch of symptoms that hardcoded in app. That symptoms extracted from the data. Hence, if user sends symptom not from the given list - app won't work
